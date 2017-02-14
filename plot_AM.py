@@ -30,6 +30,6 @@ ax.set_ylabel('Pressure [bar]', fontsize=fontsize)
 #ax.plot(np.log10(qc_smooth),P,'k--')
 
 #ax2.set_xlim([110, 160])
-fig.savefig('mixingR_Scloud.png',bbox_inches='tight')
+#fig.savefig('mixingR_Scloud.png',bbox_inches='tight')
 
 plt.show()
