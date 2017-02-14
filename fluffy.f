@@ -99,8 +99,8 @@
 
 !     SET SOME INITIAL VALUES
       z(1) = 0.
-      Tz(1) = 165.
-      Pz(1) = 1.
+      Tz(1) = maxval(T)
+      Pz(1) = maxval(P)
       Hs = (Rgas*1.D-7)*Tf/(mu*g)!*Tz(1)/(mu*g)
       Qv(1) = qbelow
       Qc(1) = 0.d0
@@ -162,9 +162,12 @@
 !       ESTIMATE OPACITY FOR GEOMETRIC SCATTERER
         dt(i+1) = 3.*(mu_a/mu)*rho_a*Qc(i+1)*Dz/(2.*rho_amm*r_eff)
         endif
-        write (20,*) Pz(i+1), Tz(i+1)!Qc(i+1)!r_g*1.d4
+!        write (20,*) Pz(i+1), Tz(i+1)!Qc(i+1)!r_g*1.d4
       enddo
 !
+      do i=1, size(P)
+        write (20,*) P(i), T(i)
+      enddo
       close (20)
 !      print*, 1.d2*8.,8.d2
       end program fluffy
