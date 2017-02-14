@@ -1,0 +1,41 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{fourier}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\begin{document}
+\title{Cloud model notes}
+\date{}
+\maketitle
+\chapter*{Sedimentation velocity $v_f$}
+\begin{enumerate}
+\item Get $r_w$ by assuming viscous sedimentation 
+\begin{align*}
+v_f &=\frac{2}{9}\frac{\beta g r^2 \Delta\rho}{\eta}\\
+r_w&\text{ is the value of particle radius for which }v_f=w^*\\
+\Rightarrow & r_w^2 +1.26\lambda r_w -\frac{9}{2}\frac{\eta w^*}{g \Delta\rho}=0\\
+\Rightarrow & r_w= \frac{1}{2}\left(-1.26\lambda + \sqrt{\left(1.26\lambda\right)^2+18\frac{\eta w^*}{g \Delta\rho}}\;\right)
+\end{align*}
+\item From $r=r_w/\sigma$ to $r=r_w$\begin{enumerate}
+\item Find \begin{equation*}
+C_d N_{Re}^2=\frac{32\rho _a g r^3 \Delta\rho}{3\eta ^2}
+\end{equation*}
+\item Find $x=\ln\left( C_d N_{Re}^2\right)$
+\item Find $y$ from the fit $y=0.8x-0.01x^2$
+\item Find Reynolds number $N_{Re}$ from $x=\ln N_{Re}\Rightarrow N_{Re}=e^x$
+\end{enumerate}
+\item If $N_{Re}\leq 1000$:\begin{itemize}
+\item Find sedimentation velocity $v_f$ from Reynolds number \begin{align*}
+N_{Re}=\frac{2r\rho _a v_f}{\eta}\\
+\Rightarrow v_f=\frac{N_{Re}\eta}{2r\rho _a}
+\end{align*}
+\end{itemize}
+\item If $N_{Re}> 1000$:
+\begin{align*}
+v_f = \beta\sqrt{\frac{8gr\Delta\rho}{3C_d\rho _a}}
+\end{align*}
+\end{enumerate}
+\end{document}
