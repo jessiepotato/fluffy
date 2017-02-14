@@ -161,8 +161,8 @@
         r_eff = rw*frain**(1/alf)*exp(-(alf+1)*(log(sig))**2/2.)
 !       ESTIMATE OPACITY FOR GEOMETRIC SCATTERER
         dt(i+1) = 3.*(mu_a/mu)*rho_a*Qc(i+1)*Dz/(2.*rho_amm*r_eff)
-        write (20,*) Pz(i+1), Qc(i+1)!r_g*1.d4
         endif
+        write (20,*) Pz(i+1), Tz(i+1)!Qc(i+1)!r_g*1.d4
       enddo
 !
       close (20)
