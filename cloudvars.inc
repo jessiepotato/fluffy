@@ -5,9 +5,9 @@
       integer, parameter :: n = 25
       real*8, parameter :: Dz = 0.03 ! layer spacing [km]
 !---------------------------------------------------------------------!
-!     PLANET-SPECIFIC (currently, Jupiter)
+!     PLANET-SPECIFIC (currently, ultracool dwarf)
 !---------------------------------------------------------------------!
-      real*8, parameter :: Tf = 1.24d2  ! effective temperature [K]
+      real*8, parameter :: Tf = 6.d2  ! effective temperature [K]
       real*8, parameter :: qbelow = 3.d-5 ! subcloud mole fraction (at 0.6 bars)
       real*8, parameter :: g = 25.d0 ! acceleration due to gravity (Jupiter) [m/s2]
       real*8, parameter :: mu = 2.2d0 ! atmospheric molecular weight [g/mol]
@@ -21,10 +21,10 @@
 !---------------------------------------------------------------------!
 !     ADJUSTABLE MODEL PARAMETERS
 !---------------------------------------------------------------------!
-      real*8, parameter :: frain = 3.d0
+      real*8, parameter :: frain = 2.d0
       real*8, parameter :: Kmin = 1.d5 ! [cm2/s]
       real*8, parameter :: A = 1.d-1
-      real*8, parameter :: Sc = 0.d0
+      real*8, parameter :: Sc = 0.d0 ! saturation
       real*8, parameter :: sig = 2.d0
 !---------------------------------------------------------------------!
 !     HOPEFULLY WILL APPLY TO ANY PLANET

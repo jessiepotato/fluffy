@@ -9,11 +9,11 @@ fig = plt.figure()
 
 ax = fig.add_subplot(111)
 
-ax.invert_yaxis()
+#ax.invert_yaxis()
 
 fontsize=25
 #ax.semilogy(np.log10(x),P,'k.-', lw=3, label='')
-ax.semilogy(x,P,'k.-', lw=3, label='')
+ax.semilogx(P,x,'k.-', lw=3, label='')
 
 ax.legend()
 #ax.set_xlim([-8, -4])
