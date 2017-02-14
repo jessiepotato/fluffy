@@ -1,3 +1,11 @@
+!     This is a model to compute the vertical size distribution and number
+!     density of a given condensate. It is based on the model of Ackerman &
+!     Marley (2001).
+!     A pressure-temperature profile is input.
+!     Requires mixing ratio of condensible vapour
+
+!     Written by Jessie Brown
+
       module interp
         implicit none
         include 'physconst.inc' !Rgas is in erg K-1 mol-1 (convert to J by x10^-7)
