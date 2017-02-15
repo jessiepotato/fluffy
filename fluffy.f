@@ -58,6 +58,7 @@
 !----------------------------------------------------------------------!
 !       A function to calculate the saturation vapour mixing ratio for !
 !       a given temperature and ambient pressure                       !
+!       Currently this is specific to ammonia                          !
 !----------------------------------------------------------------------!
       function SatVap(T,P)  result(Qs)
         real*8, intent(in) :: T, P  ! input temperature, pressure    !
