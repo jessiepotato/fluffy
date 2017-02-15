@@ -6,7 +6,7 @@
 !---------------------------------------------------------------------!
 !     REAL, ACTUAL THINGS IN THE WORLD
 !---------------------------------------------------------------------!
-      real*8, dimension (1 : 21) :: P, T ! input pressure/temperature profile [bars, K]
+      real*8, dimension (1 : 30) :: P, T ! input pressure/temperature profile [bars, K]
       real*8, dimension(1 : layers) :: z ! elevation [km]
       real*8, dimension(1 : layers) :: Pz, Tz ! interpolated pressure/temperature profile [bars, K]
       real*8, dimension(1 : n) :: r ! particle radius [cm]
